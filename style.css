@@ -132,8 +132,12 @@ a:hover {
   display: flex;
   justify-content: space-between;
   flex-flow: row wrap;
-  margin: 20px auto;
+  z-index:9;
   width: 100%;
+  background-color: white;
+  border-bottom: 1px solid #d7d7d7;
+  position: fixed;
+  top: 0;
 }
 
 .logo {
@@ -191,6 +195,7 @@ a:hover {
   url('images/banner-girl.png') no-repeat center 60px,
   url('images/flower-bkgd.jpg')repeat-x center top;
   background-size: contain, 170px, cover;
+  margin-top: 140px;
 }
 
 .new-collection {
@@ -209,7 +214,7 @@ a:hover {
 /***About section***/
 .about {
   text-align: center;
-  margin: 3em 0% 2em 0%;
+  padding-top: 5rem;
 }
 
 .title,
@@ -490,8 +495,12 @@ footer {
   }
 
 /***Hero image and opening text***/
+  .banner{
+    margin-top: 70px;
+  }
+
   .about{
-    max-width: 700px;
+    max-width: 750px;
     margin-left: auto;
     margin-right: auto;
     position: relative;

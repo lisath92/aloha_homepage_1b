@@ -28,7 +28,7 @@ $(document).ready(function(event){
 
     if(isEmailAddress(input.val()) && input.val().length>0){
       alert('Thanks for subscribing!');
-      $('#email').reset();
+      $('input[type="email"]').text('');
     } else{
       alert('Please enter a valid email address.');
     }
