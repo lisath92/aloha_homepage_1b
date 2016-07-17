@@ -424,6 +424,11 @@ input[type="submit"] {
   color: white;
   font-size: 15px;
   border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover{
+  background-color: #b64036;
 }
 
 
@@ -445,6 +450,14 @@ footer {
   margin-bottom: 15px;
   line-height: 21px;
   margin-top: 20px;
+}
+
+.contact-info a{
+  color: white;
+}
+
+.contact-info a:hover{
+  color: #b64036
 }
 
 .address{
