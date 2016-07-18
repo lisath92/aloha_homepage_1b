@@ -158,6 +158,7 @@ a:hover {
   text-align: right;
   padding-bottom: 10px;
   margin-right: 20px;
+  position: relative;
 }
 
 .cart img {
@@ -262,12 +263,14 @@ a:hover {
   box-sizing: border-box;
   border-left-style: none;
   border-right-style: none;
+  flex: 1 0 100%;
 }
 
 .small{
   height: 50vw;
   width: 45%;
   box-sizing: border-box;
+  flex: 2 0 50%;
 }
 
 .type-name {
@@ -286,7 +289,6 @@ a:hover {
 }
 
 .mens {
-  flex: 1 0 100%;
   background:
   linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.3)),
   url(images/mens-category.jpg);
@@ -294,7 +296,6 @@ a:hover {
 }
 
 .trends {
-  flex: 2 0 50%;
   background:
   linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.3)),
   url(images/trends-category.jpg);
@@ -303,7 +304,6 @@ a:hover {
 }
 
 .glasses {
- flex: 2 0 50%;
   background:
   linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.3)),
   url(images/glasses-category.jpg);
@@ -312,7 +312,6 @@ a:hover {
 }
 
 .sale{
-  flex: 2 0 50%;
   background:
   linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.3)),
   url(images/sale-category.jpg);
@@ -321,7 +320,6 @@ a:hover {
 }
 
 .bags{
-  flex: 2 0 50%;
   background:
   linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.3)),
   url(images/bags-category.jpg);
@@ -330,7 +328,6 @@ a:hover {
 }
 
 .women{
-  flex: 1 0 100%;
   background:
   linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.3)),
   url(images/womens-category.jpg);
@@ -529,7 +526,7 @@ footer {
   .small{
     max-width: 25vw;
     height: 25vw;
-    flex: 2 0 25%;
+    flex: 1 0 25%;
   }
   
   .bags,
