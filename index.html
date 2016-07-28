@@ -11,6 +11,8 @@
 </head>
 <body>
   <header class="header" id="head">
+    <a class="screen-reader-text" href="#main">Skip to content</a>
+    <h1 class="screen-reader-text">Aloha</h1>
       <div class="logo">
         <img src="images/aloha-logo.svg" alt="Aloha Shop logo">
       </div>
@@ -35,6 +37,7 @@
       <p class="spring">Spring/Summer 2016
       </p>
   </section>
+  <main id="main" class="site-main" tabindex="-1">
   <section class="about" id="about">
     <h3 class="title">Hand-Crafted
     <span class="subtitle">Styles
@@ -168,9 +171,11 @@
       </div>
     </section>
   </footer>
+</main>
 <!-- JavaScript source files -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
 <script src="https://npmcdn.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
+<script src="tota11y.min.js"></script>
 <script src="main.js"></script>
 
 </body>

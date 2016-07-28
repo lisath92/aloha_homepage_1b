@@ -1,8 +1,5 @@
-$(document).ready(function(event){ 
-
-
-
-  $(function() {
+ 
+$(function() {
     $('a[href*="#"]:not([href="#"])').click(function() {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
         var target = $(this.hash);
@@ -15,7 +12,6 @@ $(document).ready(function(event){
         }
       }
     });
-  });
 
   function isEmailAddress(emailAddress) {
     var pattern = new RegExp(/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i);
@@ -33,6 +29,8 @@ $(document).ready(function(event){
       alert('Please enter a valid email address.');
     }
   });
-
-
+  
+   $("a[href^='#']").not("a[href='#']").click(function() {
+      $("#"+$(this).attr("href").slice(1)+"").focus();
+   });
 });
