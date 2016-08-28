@@ -200,7 +200,7 @@ main[tabindex="-1"]:focus {
 /***About section***/
 .about {
   text-align: center;
-  padding-top: 5rem;
+  padding-top: 2.5rem;
 }
 
 .title,
@@ -334,7 +334,6 @@ main[tabindex="-1"]:focus {
 .carousel-cell{
   width: 100vw; 
   text-align: center;
-  padding: 2em 2em;
 }
 
 .product-type {
