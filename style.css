@@ -214,7 +214,7 @@ a:hover {
 /***About section***/
 .about {
   text-align: center;
-  padding-top: 5rem;
+  padding-top: 2.5rem;
 }
 
 .title,
@@ -348,7 +348,6 @@ a:hover {
 .carousel-cell{
   width: 100vw; 
   text-align: center;
-  padding: 2em 2em;
 }
 
 .product-type {
