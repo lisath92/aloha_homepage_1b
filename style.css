@@ -156,6 +156,7 @@ main[tabindex="-1"]:focus {
   align-self: center;
   flex: 1 0 auto;
   padding-bottom: 20px;
+  flex-basis: 55%;
 }
 
 .navbar li {
