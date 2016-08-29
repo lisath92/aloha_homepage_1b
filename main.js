@@ -39,5 +39,6 @@ $(function() {
       $("#"+$(this).attr("href").slice(1)+"").focus();
    });
 
+//Add to cart icon incrementing
 
 });
