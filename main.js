@@ -1,5 +1,6 @@
- 
 $(function() {
+
+//Smooth scrolling
     $('a[href*="#"]:not([href="#"])').click(function() {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
         var target = $(this.hash);
@@ -7,17 +8,19 @@ $(function() {
         if (target.length) {
           $('html, body').animate({
             scrollTop: target.offset().top -60
-          }, 1000);
+          }, 600);
           return false;
         }
       }
     });
 
+//To verify email addresses for the subscription
   function isEmailAddress(emailAddress) {
     var pattern = new RegExp(/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i);
     return pattern.test(emailAddress);
   };
 
+//Submit email to subscribe
   $('#subscribe').submit(function(event){
     event.preventDefault();
     var input = $('#email')
@@ -29,8 +32,11 @@ $(function() {
       alert('Please enter a valid email address.');
     }
   });
-  
+
+//Skip link focus when using tabs
    $("a[href^='#']").not("a[href='#']").click(function() {
       $("#"+$(this).attr("href").slice(1)+"").focus();
    });
+
+
 });
