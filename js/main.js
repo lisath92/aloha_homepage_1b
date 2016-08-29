@@ -43,13 +43,11 @@ $(function() {
     var button = $('.add-to-cart'),
     numberDiv = $('.number'),
     value = $('.number').html();
-    
 
-    $('.add-to-cart').on('click', function(event){ 
+      button.on('click', function(event){ 
       event.preventDefault();
       numberDiv.html(++value);
-      $('.number').css("display", "flex");
-      console.log(value);
+      numberDiv.css("display", "flex");
       return;
     })
 });
