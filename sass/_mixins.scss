@@ -1,0 +1,9 @@
+@mixin flex-display($justify) {
+  display: flex;
+  justify-content: $justify;
+  
+}
+
+@function calculateTens($num){
+  @return 10px * $num;
+}

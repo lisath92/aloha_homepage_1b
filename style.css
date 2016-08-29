@@ -81,26 +81,6 @@ table {
   font-weight: bold;
   font-style: normal; }
 
-/***Global declarations***/
-body {
-  font-family: 'Raleway Light';
-  font-size: 14px;
-  color: #2d2d2d;
-  box-sizing: border-box;
-  height: auto; }
-
-ul {
-  list-style-type: none;
-  text-align: center;
-  padding-top: 20px;
-  text-transform: uppercase; }
-
-a {
-  color: #e2574c; }
-
-a:hover {
-  color: #b64036; }
-
 /***Header***/
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
@@ -108,19 +88,18 @@ a:hover {
   height: 1px;
   width: 1px;
   overflow: hidden; }
-
-.screen-reader-text:focus {
-  background-color: white;
-  padding: 5px;
-  font-size: 20px;
-  clip: auto !important;
-  display: block;
-  height: auto;
-  left: 5px;
-  top: 5px;
-  width: auto;
-  z-index: 100000;
-  /* above all content */ }
+  .screen-reader-text:focus {
+    background-color: white;
+    padding: 5px;
+    font-size: 20px;
+    clip: auto !important;
+    display: block;
+    height: auto;
+    left: 5px;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+    /* above all content */ }
 
 main[tabindex="-1"]:focus {
   outline: 0; }
@@ -135,7 +114,6 @@ main[tabindex="-1"]:focus {
   z-index: 9;
   width: 100%;
   background-color: white;
-  border-bottom: 1px solid #d7d7d7;
   position: fixed;
   top: 0; }
 
@@ -144,10 +122,9 @@ main[tabindex="-1"]:focus {
       align-self: flex-start;
   padding: 10px;
   margin-left: 20px; }
-
-.logo img {
-  max-width: 140px;
-  height: auto; }
+  .logo img {
+    max-width: 140px;
+    height: auto; }
 
 .cart {
   -ms-flex-item-align: end;
@@ -158,6 +135,9 @@ main[tabindex="-1"]:focus {
   padding-bottom: 10px;
   margin-right: 20px;
   position: relative; }
+  .cart img {
+    max-width: 50px;
+    height: auto; }
 
 .number {
   position: absolute;
@@ -177,10 +157,6 @@ main[tabindex="-1"]:focus {
       align-items: center;
   display: none; }
 
-.cart img {
-  max-width: 50px;
-  height: auto; }
-
 .navbar {
   border-top: 1px solid  #d7d7d7;
   -ms-flex-item-align: center;
@@ -188,17 +164,34 @@ main[tabindex="-1"]:focus {
   -ms-flex: 1 0 auto;
       flex: 1 0 auto;
   padding-bottom: 20px;
-  -ms-flex-preferred-size: 55%;
-      flex-basis: 55%; }
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%; }
+  .navbar li {
+    display: inline-block;
+    text-align: center;
+    margin-right: 15px;
+    font-weight: bold; }
 
-.navbar li {
-  display: inline-block;
+/***Global declarations***/
+body {
+  font-family: 'Raleway Light';
+  font-size: 14px;
+  color: #2d2d2d;
+  box-sizing: border-box;
+  height: auto; }
+
+ul {
+  list-style-type: none;
   text-align: center;
-  margin-right: 15px;
-  font-weight: bold; }
+  padding-top: 20px;
+  text-transform: uppercase; }
 
-.navbar a {
-  text-decoration: none; }
+a {
+  text-decoration: none;
+  color: #e2574c; }
+
+a:hover {
+  color: #b64036; }
 
 /***Hero image and opening text***/
 .banner {
