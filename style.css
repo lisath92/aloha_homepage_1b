@@ -200,7 +200,7 @@ main[tabindex="-1"]:focus {
 /***About section***/
 .about {
   text-align: center;
-  padding-top: 40px;
+  margin-top: 40px;
 }
 
 .title,

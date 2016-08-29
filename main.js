@@ -3,12 +3,13 @@ $(function() {
 //Smooth scrolling
     $('a[href*="#"]:not([href="#"])').click(function() {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var header_height = $('.header').outerHeight();
         var target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
         if (target.length) {
           $('html, body').animate({
-            scrollTop: target.offset().top -60
-          }, 600);
+            scrollTop: (target.offset().top) - header_height
+          }, 900);
           return false;
         }
       }
