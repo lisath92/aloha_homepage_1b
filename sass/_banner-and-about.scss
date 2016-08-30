@@ -39,6 +39,10 @@
 .about {
   text-align: center;
   margin-top: calculateTens(4);
+  @include tablet {
+    margin: calculateTens(4) auto 0;
+    max-width: 800px;
+  }
 }
 
 .description {

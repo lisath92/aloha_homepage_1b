@@ -256,6 +256,10 @@ main[tabindex="-1"]:focus {
 .about {
   text-align: center;
   margin-top: 40px; }
+  @media (min-width: 600px) {
+    .about {
+      margin: 40px auto 0;
+      max-width: 800px; } }
 
 .description {
   width: 70%;
@@ -341,7 +345,8 @@ footer {
       -ms-flex-align: center;
           align-items: center;
       text-align: left;
-      font-size: 1rem; } }
+      font-size: 1rem;
+      padding: 20px 4%; } }
   .contact p {
     margin-bottom: 15px;
     line-height: 21px;
