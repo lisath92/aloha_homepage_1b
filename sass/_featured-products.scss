@@ -12,6 +12,13 @@
 .carousel-cell{
   width: 100vw; 
   text-align: center;
+  @include tablet {
+    width: 50vw;
+    padding: 0;
+  }
+  @include desktop {
+    width: 25vw;
+  }
 }
 
 .product-type {

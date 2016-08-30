@@ -34,15 +34,23 @@ main[tabindex="-1"]:focus {
   position: fixed;
   top: 0;
   border-bottom: $border__lightgray;
+
+  @include tablet {
+    flex-wrap: nowrap;
+  }
 }
 
 .logo {
   align-self: flex-start;
   padding: calculateTens(1);
   margin-left: calculateTens(2);
+
   img{
     max-width: 140px;
     height: auto;
+    @include desktop {
+      max-width: calculateTens(15.5);
+    }
   }
 }
 
@@ -54,10 +62,16 @@ main[tabindex="-1"]:focus {
   padding-bottom: calculateTens(1);
   margin-right: calculateTens(2);
   position: relative;
+  @include tablet {
+    order: 2;
+  }
 
   img {
     max-width: calculateTens(5);
     height: auto;
+    @include desktop {
+      max-width: 60px;
+    }
   }
 }
 
@@ -75,6 +89,10 @@ main[tabindex="-1"]:focus {
   justify-content: center;
   align-items:center;
   display: none;
+  @include desktop {
+    width: 25px;
+    height: 25px;
+  }
 
 }
 
@@ -85,6 +103,9 @@ main[tabindex="-1"]:focus {
   flex: 1 0 auto;
   padding-bottom: calculateTens(2);
   flex-basis: 60%;
+  @include tablet {
+    border-top: 0;
+  }
 
   li {
     display: inline-block;

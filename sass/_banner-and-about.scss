@@ -13,6 +13,14 @@
   url('../../assets/images/flower-bkgd.jpg')repeat-x center top;
   background-size: contain, 170px, cover;
   margin-top: calculateTens(14);
+
+  @include tablet {
+    margin-top: calculateTens(7);
+  }
+  @include desktop {
+    height: 500px;
+    background-size: cover, 250px 615px, contain;
+  }
 }
 
 .new-collection {

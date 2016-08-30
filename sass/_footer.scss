@@ -11,6 +11,13 @@ footer {
   text-align: center;
   padding: 20px;
 
+  @include tablet {
+    @include flex-display(space-between);
+    align-items: center;
+    text-align: left;
+    font-size: 1rem;
+  }
+
   p {
     margin-bottom: 15px;
     line-height: 21px;
@@ -34,18 +41,29 @@ footer {
 .media-list {
   font-family: Raleway Light;
   text-transform: none;
+
   .media-name {
-    display: inline;
+    
+    display: none;
+    @include tablet {
+      display: inline;
+    }
 
   }
+
   i {
-    min-width: calculateTens(3);
+    min-width: calculateTens(2.5);
   }
 
   li{
+    display: inline;
     color: white;
-    margin-right: calculateTens(1);
     text-align: center;
+    @include tablet{
+      display: block;
+      margin-top: calculateTens(2);
+      text-align: left;
+    }
   }
 }
 

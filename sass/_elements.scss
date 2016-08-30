@@ -5,6 +5,10 @@ body{
   color: $color__main;
   box-sizing: border-box;
   height: auto;
+
+  @include tablet{
+    font-size: 16px;
+  }
 }
 
 ul {

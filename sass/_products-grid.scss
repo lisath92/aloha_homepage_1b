@@ -18,6 +18,11 @@
   border-left-style: none;
   border-right-style: none;
   flex: 1 0 100%;
+  @include tablet {
+    max-width: 50vw;
+    height: 25vw;
+    flex: 2 0 50%;
+  }
 }
 
 .small{
@@ -25,6 +30,11 @@
   width: 45%;
   box-sizing: border-box;
   flex: 2 0 50%;
+  @include tablet {
+    max-width: 25vw;
+    height: 25vw;
+    flex: 1 0 25%;
+  }
 }
 
 .type-name {
@@ -85,4 +95,18 @@
   linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.3)),
   url(../../assets/images/womens-category.jpg);
   background-size: cover;
+}
+
+.bags,
+.mens{
+  @include tablet {
+    border-right-style: solid;
+  }
+}
+
+.women,
+.trends{
+  @include tablet {
+    border-left-style: solid;  
+  }
 }
