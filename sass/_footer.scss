@@ -1,0 +1,52 @@
+/***Footer and contact information***/
+footer {
+  background-color:#242424;
+  height: calculateTens(30);
+  width: 100%;
+  font-family: 'Playfair Display';
+  color: white;
+}
+
+.contact{
+  text-align: center;
+  padding: 20px;
+
+  p {
+    margin-bottom: 15px;
+    line-height: 21px;
+    margin-top: calculateTens(2);
+  }
+
+  a {
+    color: white;
+
+    &:hover{
+      color: $color__link_hover;
+    }
+  }
+}
+
+
+.address{
+  color: $color__lightgray;
+}
+
+.media-list {
+  font-family: Raleway Light;
+  text-transform: none;
+  .media-name {
+    display: inline;
+
+  }
+  i {
+    min-width: calculateTens(3);
+  }
+
+  li{
+    color: white;
+    margin-right: calculateTens(1);
+    text-align: center;
+  }
+}
+
+

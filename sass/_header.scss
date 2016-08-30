@@ -33,6 +33,7 @@ main[tabindex="-1"]:focus {
   background-color: white;
   position: fixed;
   top: 0;
+  border-bottom: $border__lightgray;
 }
 
 .logo {

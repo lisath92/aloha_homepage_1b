@@ -1,0 +1,60 @@
+/***Hero image and opening text***/
+.banner {
+  @include flex-display(center);
+  align-items: center;
+  flex-flow: column nowrap;
+  color: white;
+  text-align: center;
+  width: 100%;
+  height: 450px;
+  background:
+  linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
+  url('../../assets/images/banner-girl.png') no-repeat center 60px,
+  url('../../assets/images/flower-bkgd.jpg')repeat-x center top;
+  background-size: contain, 170px, cover;
+  margin-top: calculateTens(14);
+}
+
+.new-collection {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.spring {
+  font-family: 'Playfair Display';
+  font-size: 3em;
+  padding-top: calculateTens(4);
+}
+
+/***About section***/
+.about {
+  text-align: center;
+  margin-top: calculateTens(4);
+}
+
+.description {
+  width: 70%;
+  font-size: 1rem;
+  line-height: 2em;
+  margin: calculateTens(3) auto;
+  text-align: center;
+}
+
+.title,
+.subtitle {
+  font-family: 'Playfair Display';
+  font-size: 2.5em;
+}
+
+.title{
+  font-style: italic;
+}
+
+.subtitle{
+  font-size:1em;
+  font-style: normal;
+  font-weight: bold;
+}
+
+

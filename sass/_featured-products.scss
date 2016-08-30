@@ -1,0 +1,44 @@
+/***Most loved products Flickity slider***/
+.mostloved{
+  text-align: center;
+  margin-top: calculateTens(4);
+}
+
+.carousel{
+  margin-top: calculateTens(3);
+  margin-bottom: calculateTens(6);
+}
+
+.carousel-cell{
+  width: 100vw; 
+  text-align: center;
+}
+
+.product-type {
+  font-family: 'Raleway Light';
+  color: $color__lightgray;
+  font-size: 12px;
+  margin-top: 25px;
+  text-transform: uppercase;
+}
+
+.product {
+  font-family: 'Playfair Display';
+  color: $color__orange;
+  font-size: 26px;
+  padding: 20px 0px;
+}
+
+.add-to-cart {
+  border-radius: calculateTens(2);
+  background-color: $color__footer;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 8px 15px;
+  margin-top: calculateTens(2);
+    
+    &:hover {
+      background-color: #0f87a2;
+    }
+}

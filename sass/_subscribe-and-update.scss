@@ -1,0 +1,59 @@
+/***Subscribe for updates***/
+.subscribe{
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  height:350px;
+  background: 
+  -webkit-linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),
+  url('../../assets/images/wave-bkgd.jpg') no-repeat center -530px;
+  background-size: 3%, auto;
+  margin-bottom: calculateTens(1);
+}
+
+.update {
+  text-align: center;
+  color: white;
+  padding-top: 45px;
+  max-height: 20px;
+  margin-top: calculateTens(2);
+}
+
+form {
+  width: 80%;
+  position: relative;
+  margin: 0em auto 1em;
+}
+
+input[type="submit"],
+input[type="email"] {
+  border-radius: calculateTens(10);
+  font-size: 20px;
+  line-height: 2.3;
+  border: 0;
+}
+
+input[type="email"] {
+  width: 100%;
+  height: calculateTens(4);
+  font-size: 15px;
+  text-indent: 20px;
+}
+
+input[type="submit"] {
+  position: absolute;
+  padding: 2px;
+  top: 2px;
+  right: 4px;
+  background-color: $color__orange;
+  width: 113px;
+  line-height: 2;
+  color: white;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color__link_hover;
+  }
+}
