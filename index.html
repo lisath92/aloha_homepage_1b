@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <title>Aloha Shop</title>
-  <!-- <link rel="stylesheet" href="reset.css"> -->
   <link rel="stylesheet" href="build/css/style.min.css">
   <link rel="stylesheet" href="https://npmcdn.com/flickity@2.0/dist/flickity.css" media="screen">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
@@ -20,7 +19,7 @@
       <div class="number">0</div>
       <img src ="assets/images/cart-icon.svg" alt ="Cart Icon">
     </div>
-    <div class="navbar">
+    <nav class="navbar">
       <ul>
         <li><a href="#about">About</a>
         </li>
@@ -31,7 +30,7 @@
         <li><a href="#update">Update</a>
         </li>
       </ul>
-    </div>
+    </nav>
   </header>
   <section class="banner">
     <p class="new-collection">New Collection</p>
@@ -82,7 +81,7 @@
       <section class="mostloved" id="featured">
         <h3 class="title"> Most-Loved <span class="subtitle">Products</span></h3>
         <div class="carousel" data-flickity='{ "autoPlay":true, "cellAlign": "left",
-        "contain": "true"}'>
+        "contain": true, "prevNextButtons": false}'>
         <div class="carousel-cell">
           <img src="assets/images/blue-hipster-backpack.jpg" alt="blue backpack">
           <p class="product-type">Bags</p>
