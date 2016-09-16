@@ -1,4 +1,4 @@
-##Aloha HomePage - Updated version
+#Pseudo E-commerce homepage
 
 ###About
 This is a project website given by RED Academy Web Development course. Aloha Apparel Co is a clothing line that we are instructed to 
